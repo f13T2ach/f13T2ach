@@ -1,1 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>index</title>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="questions.js"></script>
+<script>
+	document.getElementById('ID10').innerText=GetCount();
+	document.getElementById('_q').innerText=GetJuanName();
+	document.getElementById('_s').innerText=GetPassInfo()
+</script>
 
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: index;
+		--web-view-id: ID1;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: ID1;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#ID1 {
+		position: absolute;
+		width: 428px;
+		height: 926px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: index;
+		--web-view-id: ID1;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#_ti{
+		left: 17px;
+		top: 31px;
+		position: absolute;
+		overflow: visible;
+		width: 251px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: DengXian;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 50px;
+		color: rgba(0,0,0,1);
+	}
+	#_j {
+		position: absolute;
+		width: 396px;
+		height: 137px;
+		left: 17px;
+		top: 92px;
+		overflow: visible;
+	}
+	#_2 {
+		fill: rgba(232,232,232,1);
+	}
+	._2 {
+		position: absolute;
+		overflow: visible;
+		width: 396px;
+		height: 126px;
+		left: 0px;
+		top: 11px;
+	}
+	#_1 {
+		fill: rgba(68,145,218,1);
+	}
+	._1 {
+		position: absolute;
+		overflow: visible;
+		width: 82px;
+		height: 21px;
+		left: 0px;
+		top: 0px;
+	}
+	#_m {
+		left: 9px;
+		top: 2px;
+		position: absolute;
+		overflow: visible;
+		width: 65px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: DengXian;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(255,255,255,1);
+	}
+	#_n {
+		left: 26px;
+		top: 122px;
+		position: absolute;
+		overflow: visible;
+		width: 61px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: DengXian;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(112,112,112,1);
+	}
+	#ID10 {
+		left: 390px;
+		top: 122px;
+		position: absolute;
+		overflow: visible;
+		width: 17px;
+		white-space: nowrap;
+		text-align: right;
+		font-family: DengXian;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(0,0,0,1);
+	}
+	#_p {
+		left: 26px;
+		top: 143px;
+		position: absolute;
+		overflow: visible;
+		width: 46px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: DengXian;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(112,112,112,1);
+	}
+	#_q {
+		left: 390px;
+		top: 143px;
+		position: absolute;
+		overflow: visible;
+		width: 16px;
+		white-space: nowrap;
+		text-align: right;
+		font-family: DengXian;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(0,0,0,1);
+	}
+	#_r {
+		left: 26px;
+		top: 164px;
+		position: absolute;
+		overflow: visible;
+		width: 76px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: DengXian;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(112,112,112,1);
+	}
+	#_s {
+		left: 376px;
+		top: 164px;
+		position: absolute;
+		overflow: visible;
+		width: 31px;
+		white-space: nowrap;
+		text-align: right;
+		font-family: DengXian;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(0,0,0,1);
+	}
+	#_t {
+		left: 26px;
+		top: 185px;
+		position: absolute;
+		overflow: visible;
+		width: 61px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: DengXian;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(112,112,112,1);
+	}
+	#_u {
+		left: 376px;
+		top: 185px;
+		position: absolute;
+		overflow: visible;
+		width: 31px;
+		white-space: nowrap;
+		text-align: right;
+		font-family: DengXian;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(0,0,0,1);
+	}
+	#_v {
+		left: 26px;
+		top: 206px;
+		position: absolute;
+		overflow: visible;
+		width: 31px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: DengXian;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(112,112,112,1);
+	}
+	#_w {
+		left: 181px;
+		top: 206px;
+		position: absolute;
+		overflow: visible;
+		width: 226px;
+		white-space: nowrap;
+		text-align: right;
+		font-family: DengXian;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(0,0,0,1);
+	}
+	#_x {
+		position: absolute;
+		width: 228px;
+		height: 28px;
+		left: 95px;
+		top: 248px;
+		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: work.html;
+		cursor: pointer;
+	}
+	#_3 {
+		fill: rgba(68,145,218,1);
+	}
+	._3 {
+		position: absolute;
+		overflow: visible;
+		width: 228px;
+		height: 28px;
+		left: 0px;
+		top: 0px;
+	}
+	#_z {
+		left: 83px;
+		top: 6px;
+		position: absolute;
+		overflow: visible;
+		width: 65px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: DengXian;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(255,255,255,1);
+	}
+	#_ {
+		position: absolute;
+		width: 228px;
+		height: 28px;
+		left: 95px;
+		top: 284px;
+		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: dash.html;
+		cursor: pointer;
+	}
+	#_3_ {
+		fill: rgba(230,230,230,1);
+	}
+	._3_ {
+		position: absolute;
+		overflow: visible;
+		width: 228px;
+		height: 28px;
+		left: 0px;
+		top: 0px;
+	}
+	#_ba {
+		opacity: 0.6;
+		left: 66px;
+		top: 5.5px;
+		position: absolute;
+		overflow: visible;
+		width: 97px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: DengXian;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(112,112,112,1);
+	}
+</style>
+
+</head>
+<body>
+<div id="ID1">
+	<div id="_ti">
+		<span>默契度测试</span>
+	</div>
+	<div id="_j" class="____">
+		<svg class="_2">
+			<rect id="_2" rx="0" ry="0" x="0" y="0" width="396" height="126">
+			</rect>
+		</svg>
+		<svg class="_1">
+			<rect id="_1" rx="0" ry="0" x="0" y="0" width="82" height="21">
+			</rect>
+		</svg>
+		<div id="_m">
+			<span>问卷详情</span>
+		</div>
+	</div>
+	<div id="_n">
+		<span>题目数量</span>
+	</div>
+	<div id="ID10">
+		<span>ID10</span>
+	</div>
+	<div id="_p">
+		<span>奖励♂</span>
+	</div>
+	<div id="_q">
+		<span>_q</span>
+	</div>
+	<div id="_r">
+		<span>奖励判定线</span>
+	</div>
+	<div id="_s">
+		<span>_s</span>
+	</div>
+	<div id="_t">
+		<span>截止时间</span>
+	</div>
+	<div id="_u">
+		<span>无限</span>
+	</div>
+	<div id="_v">
+		<span>备注</span>
+	</div>
+	<div id="_w">
+		<span>问卷不会记录您的答案和访问记录</span>
+	</div>
+	<div onclick="window.location.replace('work.html?id=1&score=0')" id="_x" class="__">
+		<svg class="_3">
+			<rect id="_3" rx="14" ry="14" x="0" y="0" width="228" height="28">
+			</rect>
+		</svg>
+		<div id="_z">
+			<span>接受挑战</span>
+		</div>
+	</div>
+	<div onclick="window.location.replace('dash.html')" id="_" class="__">
+		<svg class="_3_">
+			<rect id="_3_" rx="14" ry="14" x="0" y="0" width="228" height="28">
+			</rect>
+		</svg>
+		<div id="_ba">
+			<span>给我也整一个</span>
+		</div>
+	</div>
+</div>
+</body>
+</html>

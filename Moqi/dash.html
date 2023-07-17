@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>dash</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: dash;
+		--web-view-id: ID4;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: ID4;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#ID4 {
+		position: absolute;
+		width: 428px;
+		height: 926px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: dash;
+		--web-view-id: ID4;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#_ti{
+		left: 21px;
+		top: 31px;
+		position: absolute;
+		overflow: visible;
+		width: 101px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: DengXian;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 50px;
+		color: rgba(0,0,0,1);
+	}
+	#_1 {
+		fill: rgba(68,145,218,1);
+	}
+	._1 {
+		position: absolute;
+		overflow: visible;
+		width: 58px;
+		height: 4px;
+		left: 26px;
+		top: 87px;
+	}
+	#_ {
+		left: 24px;
+		top: 103px;
+		position: absolute;
+		overflow: visible;
+		width: 381px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: DengXian;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(0,0,0,1);
+	}
+	#NoPath {
+		position: absolute;
+		width: 193px;
+		height: 193px;
+		left: 118px;
+		top: 164px;
+		overflow: visible;
+	}
+	#_m {
+		position: absolute;
+		width: 84px;
+		height: 28px;
+		left: 24px;
+		top: 415px;
+		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: index.html;
+		cursor: pointer;
+	}
+	#_3 {
+		fill: rgba(68,145,218,1);
+	}
+	._3 {
+		position: absolute;
+		overflow: visible;
+		width: 84px;
+		height: 28px;
+		left: 0px;
+		top: 0px;
+	}
+	#_o {
+		left: 24px;
+		top: 6px;
+		position: absolute;
+		overflow: visible;
+		width: 33px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: DengXian;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(255,255,255,1);
+	}
+	#__p {
+		left: 24px;
+		top: 363px;
+		position: absolute;
+		overflow: visible;
+		width: 381px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: DengXian;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(0,0,0,1);
+	}
+</style>
+
+</head>
+<body>
+<div id="ID4">
+	<div id="_ti">
+		<span>问卷</span>
+	</div>
+	<svg class="_1">
+		<rect id="_1" rx="0" ry="0" x="0" y="0" width="58" height="4">
+		</rect>
+	</svg>
+	<div id="_">
+		<span>不支持问卷的定制，因为整个系统都是自己<br/>做出来的...</span>
+	</div>
+	<img id="NoPath" src="NoPath.png" srcset="NoPath.png 1x, NoPath@2x.png 2x">
+		
+	<div onclick="application.goToTargetView(event)" id="_m" class="__">
+		<svg class="_3">
+			<rect id="_3" rx="14" ry="14" x="0" y="0" width="84" height="28">
+			</rect>
+		</svg>
+		<div id="_o" onclick="window.location.replace('index.html')">
+			<span>返回</span>
+		</div>
+	</div>
+	<div id="__p">
+		<span>但是真的想做一个，其实可以自己动手。也<br/>就花一点时间。</span>
+	</div>
+</div>
+</body>
+</html>

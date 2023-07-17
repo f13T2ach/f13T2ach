@@ -1,0 +1,69 @@
+{
+    "name" : "默契度测试",
+    "prize":0.6,
+    "fullmark":100,
+    "juan":"真心话x1",
+    "items":
+    [
+        {
+            "question" : "我擅长社交吗？",
+            "correctIndex":1,
+            "score":10,
+            "sections":["是","否"]
+        },
+        {
+            "question" : "我擅长社交吗？",
+            "correctIndex":1,
+            "score":10,
+            "sections":["是","否"]
+        },
+        {
+            "question" : "我擅长社交吗？",
+            "correctIndex":1,
+            "score":10,
+            "sections":["是","否"]
+        },
+        {
+            "question" : "我擅长社交吗？",
+            "correctIndex":1,
+            "score":10,
+            "sections":["是","否"]
+        },
+        {
+            "question" : "我擅长社交吗？",
+            "correctIndex":1,
+            "score":10,
+            "sections":["是","否"]
+        },
+        {
+            "question" : "我擅长社交吗？",
+            "correctIndex":1,
+            "score":10,
+            "sections":["是","否"]
+        },
+        {
+            "question" : "我擅长社交吗？",
+            "correctIndex":1,
+            "score":10,
+            "sections":["是","否"]
+        },
+        {
+            "question" : "我擅长社交吗？",
+            "correctIndex":1,
+            "score":10,
+            "sections":["是","否"]
+        },
+        {
+            "question" : "我擅长社交吗？",
+            "correctIndex":1,
+            "score":10,
+            "sections":["是","否"]
+        },
+        {
+            "question" : "我擅长社交吗？",
+            "correctIndex":1,
+            "score":10,
+            "sections":["是","否"]
+        }
+    ]
+}
